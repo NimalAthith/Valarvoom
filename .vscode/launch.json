@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ValarvoomApplication",
+            "request": "launch",
+            "mainClass": "com.valarchi.valarvoom.ValarvoomApplication",
+            "projectName": "valarvoom"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ValarvoomApplication<valarvoom>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.valarchi.valarvoom.valarvoom.ValarvoomApplication",
+            "projectName": "valarvoom",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
