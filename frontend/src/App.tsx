@@ -6,7 +6,6 @@ import { UserCookies } from "./lib/User";
 
 function App() {
   const user = UserCookies.getUser();
-
   return (
     <BrowserRouter>
       <Routes>
