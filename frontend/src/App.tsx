@@ -1,11 +1,15 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Home from './Page/Home'
 
 function App() {
 
   return (
-    <>
-      <div className=" p-5 border m-5 rounded-xl shadow-lg">hi jlkjlasfd</div>
-    </>
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} /> 
+  </Routes>
+  </BrowserRouter>
   )
 }
 
