@@ -32,4 +32,8 @@ direction TB;
 column["| Expense Type | Date | Description | Current Amount |"]
 
 end
-```
+
+
+## ER Diagram
+![Blank diagram(1)](https://github.com/NimalAthith/Valarvoom/assets/98890534/40f1e465-bf87-4620-8cfd-9d72321e1737)
+
