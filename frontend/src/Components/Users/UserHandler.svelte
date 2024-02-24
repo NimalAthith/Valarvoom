@@ -2,11 +2,11 @@
   import CreateUser from "./CreateUser.svelte";
   import UserSelector from "./UserSelector.svelte";
 
-    let isInCreate = false;
+  let isInCreate = false;
 </script>
 
 {#if isInCreate}
-     <CreateUser bind:isInCreate />
+  <CreateUser bind:isInCreate />
 {:else}
-<UserSelector bind:isInCreate />
+  <UserSelector bind:isInCreate />
 {/if}

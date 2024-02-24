@@ -11,8 +11,7 @@
   let users = UserSerives.getUsers();
 </script>
 
-<Model name="Select a User" >
-  
+<Model name="Select a User">
   <div
     class="flex gap-1 rounded-lg mt-3 max-sm:h-52 h-32 flex-col overflow-y-scroll overflow-x-hidden w-96 max-sm:w-full px-3"
   >
@@ -48,8 +47,12 @@
     {/each}
   </div>
   <div class="flex items-baseline justify-between pl-3">
-    <button class="text-blue-700 font-semibold text-md"
-    on:click={()=>{isInCreate=true;}}>Create User</button>
+    <button
+      class="text-blue-700 font-semibold text-md"
+      on:click={() => {
+        isInCreate = true;
+      }}>Create User</button
+    >
     <button
       class={`px-2 py-1 mt-2 text-white font-semibold rounded-lg transition-all text-lg ${
         select === -1

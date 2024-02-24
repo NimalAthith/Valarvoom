@@ -7,4 +7,4 @@
 
 <button on:click={()=>{
   UserCookies.deleteUser();
-  $user = null;}}>hiyuyi</button>
+  $user = null;}}>Remove User</button>
