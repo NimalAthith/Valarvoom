@@ -1,5 +1,10 @@
 <script context="module">
+  import { UserCookies } from "../lib/Cookies/User";
+  import { user } from "../store/user";
+
   // your script goes here
 </script>
 
-<main>hiyuyi</main>
+<button on:click={()=>{
+  UserCookies.deleteUser();
+  $user = null;}}>hiyuyi</button>
