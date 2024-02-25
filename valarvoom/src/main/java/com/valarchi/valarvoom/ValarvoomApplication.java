@@ -1,22 +1,24 @@
-package com.valarchi.valarvoom;
+	package com.valarchi.valarvoom;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-//RestController is important
-@SpringBootApplication
-@RestController
-public class ValarvoomApplication {
+	import org.springframework.boot.SpringApplication;
+	import org.springframework.boot.autoconfigure.SpringBootApplication;
+	import org.springframework.stereotype.Controller;
+	import org.springframework.web.bind.annotation.GetMapping;
 
-	public static void main(String[] args) {
-		SpringApplication.run(ValarvoomApplication.class, args);
+	//RestController is important
+	@SpringBootApplication
+	@Controller
+	public class ValarvoomApplication {
+
+		public static void main(String[] args) {
+			SpringApplication.run(ValarvoomApplication.class, args);
+		}
+
+	@GetMapping("/[^\\\\.]+/**")
+	public String summa() {
+		System.out.println("pirnt");
+		return "index";
 	}
+		
 
-	@GetMapping("/hello")
-    public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-      return String.format("Hello %s!", name);
-    }
-
-}
+	}

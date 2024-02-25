@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
-@RequestMapping(path="/demo")
+@RestController
+@RequestMapping(path="/api")
 public class MainController {
     @Autowired
     private IncomeRepository incomeRepository;
@@ -33,5 +34,8 @@ public class MainController {
     // This returns a JSON or XML with the users
     return incomeRepository.findAll();
   }
+
+
+  
     
 }
